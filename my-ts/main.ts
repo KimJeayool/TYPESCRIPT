@@ -42,3 +42,18 @@ let color3 = Color.Red;
 console.log(color1);  // 0
 console.log(color2);  // 10
 console.log(color3);  // 11
+
+
+
+// function return type
+function returnMyname(): string {
+    return myName;
+}
+console.log(returnMyname());
+
+
+// function argument type
+function multiply(val1: number, val2: number) {
+    return val1 * val2;
+}
+console.log(multiply(2, 3));

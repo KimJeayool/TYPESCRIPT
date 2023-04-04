@@ -32,3 +32,9 @@ let color3 = Color.Red;
 console.log(color1); // 0
 console.log(color2); // 10
 console.log(color3); // 11
+// function return type
+function returnMyname() {
+    return myName;
+}
+console.log(returnMyname());
+// function argument type
