@@ -57,3 +57,13 @@ function multiply(val1: number, val2: number) {
     return val1 * val2;
 }
 console.log(multiply(2, 3));
+
+
+// function Types (Varialbes)
+let superMultiply: (a: number, b: number) => number;
+superMultiply = multiply;
+console.log(superMultiply(2, 4));
+
+let resultMultiply: number;
+resultMultiply = multiply(20, 10);
+console.log(resultMultiply);

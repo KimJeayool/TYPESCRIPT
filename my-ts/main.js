@@ -38,3 +38,14 @@ function returnMyname() {
 }
 console.log(returnMyname());
 // function argument type
+function multiply(val1, val2) {
+    return val1 * val2;
+}
+console.log(multiply(2, 3));
+// function Types (Varialbes)
+let superMultiply;
+superMultiply = multiply;
+console.log(superMultiply(2, 4));
+let resultMultiply;
+resultMultiply = multiply(20, 10);
+console.log(resultMultiply);
