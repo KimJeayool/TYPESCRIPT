@@ -67,3 +67,9 @@ console.log(superMultiply(2, 4));
 let resultMultiply: number;
 resultMultiply = multiply(20, 10);
 console.log(resultMultiply);
+
+
+// Objects = Properties = Key + Value
+type heroObj = { name: string; age: number; addr: (arg: string) => string };
+let heroOne: heroObj = { name: 'Spiderman', age: 22, addr: (arg) => arg };
+console.log(heroOne);

@@ -49,3 +49,5 @@ console.log(superMultiply(2, 4));
 let resultMultiply;
 resultMultiply = multiply(20, 10);
 console.log(resultMultiply);
+let heroOne = { name: 'Spiderman', age: 22, addr: (arg) => arg };
+console.log(heroOne);
