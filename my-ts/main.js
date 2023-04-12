@@ -56,3 +56,7 @@ let heroTeam;
 heroTeam = ['Superman', 'Batman', 'Flash'];
 heroTeam = [11, 33, 44];
 heroTeam = [true, false, true];
+// Check Types = typeof
+let finalWinner = 'IronMan';
+if (typeof finalWinner == "string")
+    console.log(`This Object type is String`);
