@@ -51,3 +51,8 @@ resultMultiply = multiply(20, 10);
 console.log(resultMultiply);
 let heroOne = { name: 'Spiderman', age: 22, addr: (arg) => arg };
 console.log(heroOne);
+// Union Type
+let heroTeam;
+heroTeam = ['Superman', 'Batman', 'Flash'];
+heroTeam = [11, 33, 44];
+heroTeam = [true, false, true];

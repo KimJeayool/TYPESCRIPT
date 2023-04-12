@@ -73,3 +73,11 @@ console.log(resultMultiply);
 type heroObj = { name: string; age: number; addr: (arg: string) => string };
 let heroOne: heroObj = { name: 'Spiderman', age: 22, addr: (arg) => arg };
 console.log(heroOne);
+
+
+
+// Union Type
+let heroTeam: string[] | number[] | boolean[];
+heroTeam = ['Superman', 'Batman', 'Flash'];
+heroTeam = [11, 33, 44];
+heroTeam = [true, false, true];
