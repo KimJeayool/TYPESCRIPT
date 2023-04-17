@@ -60,3 +60,6 @@ heroTeam = [true, false, true];
 let finalWinner = 'IronMan';
 if (typeof finalWinner == "string")
     console.log(`This Object type is String`);
+// Fat Arrow Functions
+let multiply2 = (num1, num2) => num1 + num2;
+console.log(multiply2(1, 10));
