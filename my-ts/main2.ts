@@ -13,3 +13,11 @@ function totalWage(fixedPayment: number, ...numbers: number[]) {
     return sum + fixedPayment;
 }
 console.log(totalWage(100, 10, 20, 30, 40, 50));
+
+
+
+// Template Literals
+let hero = "Spiderman";
+let addr = "Seoul";
+let str = `${hero} live at ${addr}`;
+console.log(str);
