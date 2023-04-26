@@ -18,3 +18,27 @@ let hero = "Spiderman";
 let addr = "Seoul";
 let str = `${hero} live at ${addr}`;
 console.log(str);
+// Class
+class Hero {
+    // // 일반 생성자
+    // name: string;
+    // age: number;
+    // constructor(name: string, age: number) {
+    //     this.name = name;
+    //     this.age = age;
+    // }
+    // // public 생성자
+    // constructor(public name: string, public age: number) {}
+    // private 생성자
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    get getName() {
+        return this.name;
+    }
+    set setName(name) {
+        this.name = name;
+    }
+}
+let hero1 = new Hero("Superman", 25);
