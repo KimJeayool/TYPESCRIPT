@@ -47,5 +47,21 @@ class Hero {
     set setName(name: string) {
         this.name = name;
     }
+
+    password(arg: number) {
+        if (arg === 1234) {
+            // Private function 사용.
+            this.sendMoney();
+        } else {
+            console.log('Wrong Password');
+        }
+
+    }
+
+    // Private Function 선언.
+    private sendMoney() {
+        console.log('This is money');
+    }
 }
 let hero1 = new Hero("Superman", 25);
+hero1.password(1234);
