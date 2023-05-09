@@ -56,3 +56,20 @@ class Hero {
 }
 let hero1 = new Hero("Superman", 25);
 hero1.password(1234);
+// Static Property
+// static 선언을 하지 않으면, this(인스턴스) 인식이 되지 않는다.
+class CalcConstants {
+    static calcCircumference1(diameter) {
+        // this = CalcConstants
+        return diameter * this.PI;
+    }
+    calcCircumference2(diameter) {
+        // this = instance of CalcConstants
+        return diameter * CalcConstants.PI;
+    }
+}
+CalcConstants.PI = 3.14;
+let clac1 = new CalcConstants();
+console.log(CalcConstants.PI);
+console.log(CalcConstants.calcCircumference1(10));
+console.log(clac1.calcCircumference2(10));
