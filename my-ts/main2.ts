@@ -86,3 +86,24 @@ let clac1 = new CalcConstants();
 console.log(CalcConstants.PI);
 console.log(CalcConstants.calcCircumference1(10));
 console.log(clac1.calcCircumference2(10));
+
+
+// Inheritance
+class Base {
+    hero: string = 'Batman';
+    protected action() {
+        console.log('Driving Batcar');
+    }
+}
+
+class Derived extends Base {
+    action() {
+        // super pints to 'pulbic' or 'protected'
+        super.action();
+        console.log('Running');
+    }
+}
+
+const dev1 = new Derived;
+console.log(dev1.hero);
+console.log(dev1.action());
